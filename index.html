@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Data</title>
+    <style>
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid #333;
+        padding: 5px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aplikasi Data Siswa</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti
+      laudantium harum vel ratione. Autem!
+    </p>
+
+    <div>
+      <input type="text" placeholder="Masukan Nama" id="name" name="name" />
+      <input
+        type="text"
+        placeholder="Masukan Sekolah"
+        id="school"
+        name="school"
+      />
+      <select id="prodi">
+        <option>--Pilih--</option>
+        <option value="Manajemen Informatika">Manajemen Informatika</option>
+        <option value="Manajemen Keuangan Perbankan">
+          Manajemen Keuangan Perbankan
+        </option>
+      </select>
+      <button id="button" onclick="saveData()">Simpan</button>
+      <button onclick="resetData()">Reset</button>
+    </div>
+
+    <div style="margin-top: 10px">
+      <table>
+        <thead>
+          <tr>
+            <th>NO</th>
+            <th>NAMA</th>
+            <th>SEKOLAH</th>
+            <th>PRODI</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody id="result"></tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
